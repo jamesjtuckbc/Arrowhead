@@ -1,16 +1,12 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-// import { DATA } from '../utils/data'
 
-export default function Home() {
-
-    
-
-
-
+export default function Error() {
     return (
         <Container fluid className='text-center'>
-            Under construction, please come back later
+            We're sorry, looks like we couldn't recover that page
+            <br />
+            head <a href='/'>home</a>?
         </Container>
     )
 };

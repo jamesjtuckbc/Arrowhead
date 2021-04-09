@@ -1,30 +1,34 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container, Row } from 'react-bootstrap';
-// import NavBar from './components/NavBar';
-import Home from './pages/Home';
+import NavigationBar from './components/NavigationBar';
+// import Home from './pages/Home';
 // import About from './pages/About';
 // import Contact from './pages/Contact';
+// import Services from './pages/Services';
 // import Error from './pages/Error';
-// import Footer from './components/Footer';
+import Construction from './pages/Construction';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
-        {/* <NavBar /> */}
+        <NavigationBar />
         <Container fluid>
           <Row>
             <Switch>
-              <Route exact path='/' component={Home} />
-              {/* <Route exact path='/about' component={About} /> */}
-              {/* <Route exact path='/contact' component={Contact} /> */}
-              {/* <Route component={Error} /> */}
+              {/* <Route exact path='/' component={Home} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/services' component={Services} />
+              <Route component={Error} /> */}
+              <Route component={Construction} />
             </Switch>
           </Row>
         </Container>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
